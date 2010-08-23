@@ -27,7 +27,7 @@ To install this macro via a git clone:
   cd {mingle_root}/vendor/plugins
   git clone git://github.com/wpc/mingle_themes_macro.git
 
-where /path/to/mingle_root is the location where Mingle 3.2 is installed. 
+where #{mingle_root} is the location where Mingle 3.2 is installed. 
 
   * On Windows, this is the location that the installer installed Mingle at
   * On OSX, this will be within the app bundle, at <mingle_application_bundle>/Contents/Resources/app
