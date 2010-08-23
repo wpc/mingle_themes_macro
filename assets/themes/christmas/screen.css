@@ -1,0 +1,109 @@
+#hd {
+  background-image: url(christmas.gif);
+  background-repeat: repeat-x;
+  padding-top: 6em
+}
+
+#page-content {
+/*  background-image: url(santa.png) !important;*/
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: scroll !important;
+}
+
+#title a, #user a, #hd a, #hd-nav li.menu-item span.first-link a{
+  color: #fffacd;
+}
+
+#title a.up-small:hover, a.profile:hover, a.sign-in:hover, a.sign-out:hover, #hd a:hover{
+  background-color: #b22222
+}
+
+#hd-bottom {
+  background: transparent;
+}
+
+#hd-nav li.current-menu-item {
+  background: #fffacd !important;
+  border: #fffacd 1px solid;
+
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;  
+}
+
+#hd-nav li.menu-item {
+  background: transparent !important;
+  margin-top: 4px;
+  border: #fffacd 1px solid;
+  border-bottom: none;
+  color: #fffacd;
+
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;     
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+#hd-nav li.menu-item span.first-link, #hd-nav li.current-menu-item span.first-link{
+  background: transparent !important;
+}
+
+div.card-icon {
+  border-radius: 5px;     
+  -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px;
+
+  -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vtree-card {
+  border-radius: 5px;     
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+  
+.wiki table {
+  margin-left: 2em;
+  margin-top: 2em;
+  border-color: yellow
+  border: 1px dotted;
+
+  -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.wiki h1 {  
+  color: maroon;
+  font-size: 150% !important;   
+  font-family: fantasy;
+  padding-left: 0.5em;
+}
+
+.wiki h2 {
+  color: blue;
+  font-family: fantasy;
+}
+
+.wiki h4 {
+  color: green;
+  font-style: arial;
+}
+
+ .wiki pre {
+  padding: 1em;
+  width: 60%;
+  color: #fffacd;
+  font-style: arial;
+  font-size: 120%;          
+  background-color: seagreen !important;
+  border-radius: 5px;     
+  -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px;
+
+  -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
