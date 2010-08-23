@@ -1,3 +1,6 @@
+# Copyright (c) 2010 ThoughtWorks Inc. (http://thoughtworks.com)
+# Licenced under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
 class ThemesMacro
 
   AVAIABLE_THEMES = Dir[File.expand_path("../../assets/themes/*", __FILE__)].inject(['default']) do |themes, dir|
