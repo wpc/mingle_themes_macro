@@ -5,6 +5,8 @@ class ThemesMacro
     themes
   end
   
+  PLUGIN_NAME = File.basename(File.expand_path("../..", __FILE__))
+  
   
   def initialize(parameters, project, current_user)
     @theme = parameters["name"]
@@ -20,7 +22,7 @@ class ThemesMacro
     return "" if @themes == "default"
     
     <<-HTML
-      <link rel="stylesheet" href="/plugin_assets/themes_macro/themes/#{@theme}/screen.css" type="text/css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="/plugin_assets/#{PLUGIN_NAME}/themes/#{@theme}/screen.css" type="text/css" media="screen" charset="utf-8">
     HTML
   end
   
