@@ -22,12 +22,18 @@ class ThemesMacro
     return "" if @themes == "default"
     
     <<-HTML
-      <link rel="stylesheet" href="/plugin_assets/#{PLUGIN_NAME}/themes/#{@theme}/screen.css" type="text/css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="#{file_link('screen.css')}" type="text/css" media="screen" charset="utf-8">
     HTML
   end
   
   def can_be_cached?
     true
+  end
+  
+  private
+  
+  def file_link(css_file)
+    "#{CONTEXT_PATH}/plugin_assets/#{PLUGIN_NAME}/themes/#{@theme}/#{css_file}"
   end
   
 end
