@@ -1,0 +1,62 @@
+== MINGLE THEMES MACRO
+
+This tool provides support for adding custom themes to your Mingle project.
+
+== CAUTION
+
+  BEFORE YOU DEPLOY ANYTHING TO YOUR MINGLE INSTANCE, PLEASE MAKE SURE THAT IT IS COMPLETELY SAFE. 
+  THIS IS ESPECIALLY IMPORTANT IF THE MACRO WAS DEVELOPED BY A THIRD PARTY.  HERE IS A LIST OF 
+  THINGS THAT YOU SHOULD LOOK OUT FOR. THIS LIST SHOULD NOT BE CONSIDERED COMPLETE, IT IS JUST A 
+  REPRESENTATIVE SAMPLE.
+      *    IF MINGLE RUNS AS A PRIVILEGED USER, THE MACRO COULD END UP DAMAGING THE HOST MACHINE
+      *    THROUGH DIRECT SQL CALLS, RATHER THAN USING SUPPLIED MQL EXECUTION MECHANISM, 
+           THE MACRO COULD GAIN ACCESS TO DATA THAT PEOPLE WOULD NORMALLY NOT BE AUTHORIZED TO SEE
+      *    LENGTHY CALLS TO EXTERNAL SYSTEMS COULD TIE UP MINGLE RESOURCES AND LEAVE THE APP UNRESPONSIVE
+      *    SYSTEM CALLS, IF USED, MUST BE INSPECTED AND WELL-UNDERSTOOD PRIOR TO DEPLOYMENT
+      *    IF THE MACRO EMITS BAD JAVASCRIPT, YOU COULD BREAK BASIC FUNCTIONALITY ON THE MINGLE UI
+      *    OTHER DATABASE ACTIVITY, SUCH AS TRANSACTION COMMITS, SHOULD BE MONITORED AND AVOIDED
+
+== INSTALLATION
+
+This Mingle custom macro requires Mingle 3.2 or greater.
+
+Whenever installing a Mingle Macro you should be aware of the following:
+
+To install this macro via a git clone:
+
+  cd {mingle_root}/vendor/plugins
+  git clone git://github.com/wpc/mingle_themes_macro.git
+
+where /path/to/mingle_root is the location where Mingle 3.2 is installed. 
+
+  * On Windows, this is the location that the installer installed Mingle at
+  * On OSX, this will be within the app bundle, at <mingle_application_bundle>/Contents/Resources/app
+  * On *NIX, this is the expanded archive
+
+Once deployed, the server will need to be restarted in order for the macro to become available for use.
+
+== USING THE MACRO
+
+After completing the installation you can use the macro via the following markup on your project's Special::ActionsHeader page:
+
+{{ themes name: christmas }}
+
+== CREATING NEW THEMES
+
+== LICENSE:
+
+See the LICENSE file for a copy of the license.
+
+Copyright 2010 ThoughtWorks, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
