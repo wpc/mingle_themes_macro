@@ -25,7 +25,7 @@ Whenever installing a Mingle Macro you should be aware of the following:
 To install this macro via a git clone:
 
   cd {mingle_root}/vendor/plugins
-  git clone git://github.com/wpc/mingle_themes_macro.git
+  git clone http://github.com/wpc/mingle_themes_macro.git
 
 where #{mingle_root} is the location where Mingle 3.2 is installed. 
 
@@ -42,6 +42,14 @@ After completing the installation you can use the macro via the following markup
 {{ themes name: christmas }}
 
 == CREATING NEW THEMES
+
+To create a new theme, create a folder with the name of the theme under {pluginroot}/assets directory, for example called "mytheme". Then create a File named screen.css under mytheme, put all stylings you want into that file( take a look on how Christmas theme did it). Then restart server and add macro
+
+{{ theme name: mytheme }}
+
+To special header actions page of the project you want to apply the theme.
+
+  
 
 == LICENSE:
 
